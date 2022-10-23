@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Maven+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#reset{
+    font-size: 2em;
+}
+
+nav{
+    background-color: rgb(91, 5, 103);
+    color: aliceblue;
+    height: 70px;
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    font-family: 'Bungee Spice', cursive;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+    background-color: rgb(191, 244, 237);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Bungee Spice', cursive;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(244, 217, 225);
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+@media screen and (max-width: 950px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,10vw);
+        grid-template-rows: repeat(3,10vw);
+        font-family: 'Bungee Spice', cursive;
+    }
+}
+.gameInfo h1{
+    font-size: 1.5rem;
+}
